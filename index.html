@@ -1,0 +1,75 @@
+<!doctype html>
+
+<html lang="en">
+
+	<head>
+	  <meta charset="utf-8">
+
+	  <title>Mass Effect</title>
+	  <meta name="description" content="Mass Effect">
+	  <meta name="author" content="SitePoint">
+
+	  <link rel="stylesheet" href="css/master.css">
+	  <script src="./js/jquery.js"></script>
+	  <script src="./js/audio.js"></script>
+	  <script src="./js/scripts.js"></script>
+
+	  <!--[if lt IE 9]>
+	  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	  <![endif]-->
+	</head>
+
+	<body>
+		<header>
+			<nav>
+				<a href="/" class="home">DJ Mass Effect</a>
+
+				<ul class="main-nav">
+					<li class="nav-link"><a href="#">Music</a></li>
+					<li class="nav-link"><a href="#">Gigs</a></li>
+					<li class="nav-link"><a href="#">About</a></li>
+					<li class="nav-link"><a href="#">Contact</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<div id="wrapper">
+			<div class="main-hero"></div>
+		</div>
+
+		<div class="player">
+			
+			<div class="left-controls">
+				<div class="btn toggle-play play" data-audio-fn="togglePlayPause"></div>
+				<div class="btn volume"></div>
+			</div>
+
+			<div class="progress">
+				<div class="progress-inner">
+					<p class="title">asdfasdfadsf</p>
+					<p class="timestamp">time time</p>
+				</div>
+
+				<div class="progress-slider">
+					<div class="progress-inner">
+						<p class="title">asdfasdfadsf</p>
+						<p class="timestamp">time time</p>
+					</div>
+				</div>
+				
+			</div>
+
+			<div class="right-controls">
+				<div class="btn prev"></div>
+				<div class="btn next"></div>
+				<div class="btn list"></div>
+			</div>
+
+			<audio src="./media/you.ogg" id="audio">
+				<p>Your browser does not support the audio element.</p>
+			</audio>
+
+			<div class="playlist"></div>
+		</div>
+	</body>
+</html>
