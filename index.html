@@ -11,8 +11,9 @@
 
 	  <link rel="stylesheet" href="css/master.css">
 	  <script src="./js/jquery.js"></script>
-	  <script src="./js/audio.js"></script>
+	  <script src="./js/audio_player.js"></script>
 	  <script src="./js/scripts.js"></script>
+	  <script src="./js/jquery.scrollmagic.min.js"></script>
 
 	  <!--[if lt IE 9]>
 	  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -22,7 +23,7 @@
 	<body>
 		<header>
 			<nav>
-				<a href="/" class="home">DJ Mass Effect</a>
+				<a href="/" class="home">Mass Effect</a>
 
 				<ul class="main-nav">
 					<li class="nav-link"><a href="#">Music</a></li>
@@ -34,42 +35,43 @@
 		</header>
 
 		<div id="wrapper">
-			<div class="main-hero"></div>
+			<section id="main" class="main-hero"></section>
 		</div>
 
-		<div class="player">
-			
-			<div class="left-controls">
-				<div class="btn toggle-play play" data-audio-fn="togglePlayPause"></div>
-				<div class="btn volume"></div>
-			</div>
-
-			<div class="progress">
-				<div class="progress-inner">
-					<p class="title">asdfasdfadsf</p>
-					<p class="timestamp">time time</p>
+		<div id="audio-player" class="player">
+			<div class="audio-player-body">
+				<div class="left-controls">
+					<div class="btn toggle-play play" data-audio-el="togglePlayPause"></div>
+					<div class="btn volume" data-audio-el="volume"></div>
 				</div>
 
-				<div class="progress-slider">
+				<div class="progress"  data-audio-el="progressContainer"> 
 					<div class="progress-inner">
-						<p class="title">asdfasdfadsf</p>
-						<p class="timestamp">time time</p>
+						<p class="title" data-audio-el="title"></p>
+						<p class="timestamp"><span id="elapsed-time" data-audio-el="elapsedTime"></span> of <span data-audio-el="durationTime"></span></p>
 					</div>
+
+					<div class="progress-slider" data-audio-el="progressBar">
+						<div class="progress-inner">
+							<p class="title" data-audio-el="title"></p>
+							<p class="timestamp"><span id="elapsed-time" data-audio-el="elapsedTime"></span> of <span data-audio-el="durationTime"></span></p>
+						</div>
+					</div>				
 				</div>
+
+				<div class="right-controls">
+					<div class="btn prev" data-audio-el="previousSong"></div>
+					<div class="btn next" data-audio-el="nextSong"></div>
+					<div class="btn list" data-audio-el="togglePlaylist">track list <span></span></div>
+				</div>
+
+				<audio id="audioPlayer">
 				
+				</audio>
 			</div>
 
-			<div class="right-controls">
-				<div class="btn prev"></div>
-				<div class="btn next"></div>
-				<div class="btn list"></div>
-			</div>
-
-			<audio src="./media/you.ogg" id="audio">
-				<p>Your browser does not support the audio element.</p>
-			</audio>
-
-			<div class="playlist"></div>
+			<ul class="playlist" data-audio-el="playlist">
+			</ul>
 		</div>
 	</body>
 </html>
