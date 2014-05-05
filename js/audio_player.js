@@ -224,25 +224,62 @@ $(document).ready(function () {
 	  el: document.getElementById("audio-player"),
 	  songs: [
 	    {
-	      name: "Gangster Grills - Compromise",
-	      duration: "5:49",
+	      name: "Sun & Moon Walls (Mass Effect Mashup)",
+	      duration: "7:02",
 	      srcs: [
 	        {
-	          src: "media/compromise.mp3",
+	          src: "media/Sun & Moon Walls (Mass Effect Mashup).mp3",
 	          type: "audio/mp3"
+	        },
+	        {
+	          src: "media/Sun & Moon Walls (Mass Effect Mashup).0gg",
+	          type: "audio/ogg"
 	        }
 	      ]
 	    },
 	    {
-	      name: "Gangster Grills - Turnup",
+	      name: "Swoon The World (Mass Effect Mashup)",
+	      duration: "7:09",
+	      srcs: [
+	        {
+	          src: "media/Swoon-The-World-Mass-Effect-Mashup.mp3",
+	          type: "audio/mp3"
+	        },
+	        {
+	          src: "media/Swoon-The-World-Mass-Effect-Mashup.ogg",
+	          type: "audio/ogg"
+	        }
+	      ]
+	    },
+	    {
+	      name: "Sweet Quasar (Mass Effect Mashup)",
+	      duration: "6:29",
+	      srcs: [
+	        {
+	          src: "media/Sweet Quasar (Mass Effect Mashup).mp3",
+	          type: "audio/mp3"
+	        },
+	        {
+	          src: "media/Sweet Quasar (Mass Effect Mashup).ogg",
+	          type: "audio/ogg"
+	        }
+	      ]
+	    },
+	    {
+	      name: "Monster Bullet - Michael Woods vs Lady Gaga (Mass Effect Mashup)",
 	      duration: "5:48",
 	      srcs: [
 	        {
-	          src: "media/turnitup.mp3",
+	          src: "media/Monster Bullet - Michael Woods vs Lady Gaga (Mass Effect Mashup).mp3",
 	          type: "audio/mp3"
+	        },
+	        {
+	          src: "media/Monster Bullet - Michael Woods vs Lady Gaga (Mass Effect Mashup).ogg",
+	          type: "audio/ogg"
 	        }
 	      ]
-	    } 
+	    },
+
 	    // {
 	    //   image: "images/sunhawk-small-2@2x.jpg",
 	    //   name: "Sunhawk - Shotgun Love",

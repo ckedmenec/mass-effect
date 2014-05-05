@@ -10,10 +10,15 @@
 *:after
 	+box-sizing(border-box)
 
-body,
-html
+p, 
+body, 
+html,
+ul 
 	margin: 0
 	padding: 0
+
+body,
+html
 	height: 100%
 	min-width: 960px
 	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif
@@ -26,6 +31,7 @@ header
 	top: 0
 	width: 100%
 	min-width: 960px
+	z-index: 10
 
 nav
 	color: #fff
@@ -51,7 +57,6 @@ nav
 .main-nav 
 	float: right
 	list-style: none
-	margin: 0
 
 .nav-link
 	float: left
@@ -88,15 +93,79 @@ nav
 	width: 100%
 
 #equipment
-	background-image: url(../img/equipment.png)
+	background-image: url(../img/equipment.jpg)
+	background-size: cover
+	background-position: 50% 50%
+	background-attachment: fixed
+	height: 50%
+	width: 100%
+	min-height: 500px
+
+#events
+	background-image: url(../img/events.jpg)
 	background-size: cover
 	background-position: 50% 50%
 	height: 100%
 	width: 100%
+	position: relative
 
 #wrapper
 	height: 100%
 	width: 100%
+
+#next-event
+	border: 10px solid #fff
+	border-bottom: 0
+	display: block
+	position: absolute
+	top: 50%
+	margin-top: -250px
+	left: 50%
+	margin-left: -45%
+
+	.event-info 
+		width: 380px
+		height: 380px
+		background-color: rgba(0,0,0,0.1)
+		position: relative
+		padding-top: 45px
+
+	.event-details 
+		height: 110px
+		display: block
+		background-color: #fff
+		padding: 35px
+
+	h2 
+		font-size: 30px
+		color: #000
+		text-transform: uppercase
+		text-align: center
+
+	.date-container
+		text-align: center
+		margin-top: 50px
+
+	.month
+		font-size: 14px
+		color: #b11a1a
+		font-weight: bold
+		line-height: 1
+		text-transform: uppercase
+	.day
+		font-size: 160px
+		color: #b11a1a
+		font-weight: bold
+		line-height: 120px
+
+	.title
+		font-size: 12px
+		font-weight: bold
+		text-align: center
+
+	.time
+		font-size: 12px
+		text-align: center
 
 
 // Audio Player
@@ -267,11 +336,13 @@ nav
 		float: right
 		text-transform: uppercase
 		padding-right: 12px
+		white-space: nowrap
 
 	.title
 		float: left
 		padding-left: 20px
 		text-transform: uppercase
+		white-space: nowrap
 
 
 .progress-inner 
@@ -304,4 +375,26 @@ nav
 			float: left
 
 // End Audio player
+
+
+.full-bg 
+	height: 100%
+	width: 100%
+	background-size: cover
+	background-attachment: fixed
+	background-position: 50% 0
+
+.info-spread 
+	width: 100%
+	height: 400px
+
+#main
+	background-image: url(../img/home_page_main_hero.jpg)
+
+#roof
+	background-image: url(../img/home_page_roof_hero.jpg)
+
+#laugh
+	background-image: url(../img/home_page_smile_hero.jpg)
+
 

@@ -8,10 +8,15 @@
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
+p,
+body,
+html,
+ul {
+  margin: 0;
+  padding: 0; }
+
 body,
 html {
-  margin: 0;
-  padding: 0;
   height: 100%;
   min-width: 960px;
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; }
@@ -23,7 +28,8 @@ header {
   position: fixed;
   top: 0;
   width: 100%;
-  min-width: 960px; }
+  min-width: 960px;
+  z-index: 10; }
 
 nav {
   color: white;
@@ -48,8 +54,7 @@ nav {
 
 .main-nav {
   float: right;
-  list-style: none;
-  margin: 0; }
+  list-style: none; }
 
 .nav-link {
   float: left;
@@ -83,15 +88,72 @@ nav {
   width: 100%; }
 
 #equipment {
-  background-image: url(../img/equipment.png);
+  background-image: url(../img/equipment.jpg);
+  background-size: cover;
+  background-position: 50% 50%;
+  background-attachment: fixed;
+  height: 50%;
+  width: 100%;
+  min-height: 500px; }
+
+#events {
+  background-image: url(../img/events.jpg);
   background-size: cover;
   background-position: 50% 50%;
   height: 100%;
-  width: 100%; }
+  width: 100%;
+  position: relative; }
 
 #wrapper {
   height: 100%;
   width: 100%; }
+
+#next-event {
+  border: 10px solid white;
+  border-bottom: 0;
+  display: block;
+  position: absolute;
+  top: 50%;
+  margin-top: -250px;
+  left: 50%;
+  margin-left: -45%; }
+  #next-event .event-info {
+    width: 380px;
+    height: 380px;
+    background-color: rgba(0, 0, 0, 0.1);
+    position: relative;
+    padding-top: 45px; }
+  #next-event .event-details {
+    height: 110px;
+    display: block;
+    background-color: white;
+    padding: 35px; }
+  #next-event h2 {
+    font-size: 30px;
+    color: black;
+    text-transform: uppercase;
+    text-align: center; }
+  #next-event .date-container {
+    text-align: center;
+    margin-top: 50px; }
+  #next-event .month {
+    font-size: 14px;
+    color: #b11a1a;
+    font-weight: bold;
+    line-height: 1;
+    text-transform: uppercase; }
+  #next-event .day {
+    font-size: 160px;
+    color: #b11a1a;
+    font-weight: bold;
+    line-height: 120px; }
+  #next-event .title {
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center; }
+  #next-event .time {
+    font-size: 12px;
+    text-align: center; }
 
 .player {
   background-color: #f2f2f2;
@@ -250,11 +312,13 @@ nav {
   .progress .timestamp {
     float: right;
     text-transform: uppercase;
-    padding-right: 12px; }
+    padding-right: 12px;
+    white-space: nowrap; }
   .progress .title {
     float: left;
     padding-left: 20px;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    white-space: nowrap; }
 
 .progress-inner {
   height: 100%;
@@ -280,3 +344,23 @@ nav {
       float: right; }
     .progress-slider .progress-inner .title {
       float: left; }
+
+.full-bg {
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: 50% 0; }
+
+.info-spread {
+  width: 100%;
+  height: 400px; }
+
+#main {
+  background-image: url(../img/home_page_main_hero.jpg); }
+
+#roof {
+  background-image: url(../img/home_page_roof_hero.jpg); }
+
+#laugh {
+  background-image: url(../img/home_page_smile_hero.jpg); }
